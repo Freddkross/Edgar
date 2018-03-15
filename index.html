@@ -9,13 +9,13 @@
 <div class="login-box">
 	<img  class="avatar" src="img/lg.png">
 	<h1>Login Here</h1>
-	<form>
+	<form method="POST" action="login.php">
 		<!--USERNAME -->
 		<label for="username">username</label>
-		<input type="text" placeholder="Enter Username">
+		<input type="text" name="Usuario" placeholder="Enter Username">
 		<!--Password -->
 		<label for="Password">password</label>
-		<input type="Password" placeholder="Enter Password">
+		<input type="Password" name="Password" placeholder="Enter Password">
 		<input type="submit" value="Login">
 		<a href="#">Lost your password?</a><br>
 		<a href="#">Don't have an account?</a>
