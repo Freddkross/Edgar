@@ -63,6 +63,72 @@
     </nav>
     <!--fin del menu -->
 
+    <!--Inicio de registro altas -->
+    
+    <div class="mt-5 container d-flex justify-content-center  ">
+      <div class="row ">
+        <div class="col ">
+          <!--inicio del formulario -->
+          <form>
+             <div class="form-row">
+              <!--fila del Id -->
+               <div class="col-md-3 mb-4">
+                <label  for="ID">ID</label>
+                <input type="text" class="form-control" id="ID" placeholder="ID del album"  required>
+              </div>
+             </div>
+            <!--primera fila -->
+            <div class="form-row">
+               <div class="col-md-4 mb-6">
+                <label for="Album">Album</label>
+                <input type="text" class="form-control" id="Album" placeholder="Nombre del album"  required>                
+              </div>              
+              <div class="col-md-4 mb-2">
+                <label for="Genero">Genero</label>
+                <input type="text" class="form-control" id="Genero" placeholder="Genero"  required>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label for="Autor">Autor</label>               
+                  <input type="text" class="form-control" id="Autor" placeholder="Nombre del Autor"  required>                  
+              </div>
+            </div>
+        <!-- termina la primera fila -->
+            <div class="form-row">             
+              <div class="col-md-4 mb-2">
+                <label for="Pasillo">Pasillo</label>
+                <input type="text" class="form-control" id="Pasillo" placeholder="Pasillo A">
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="Are">Area</label>
+                  <input type="text" class="form-control" id="Area" placeholder="Area de hubicación"  required>
+              </div>
+              <div class="col-md-4 mb-6">
+                <label for="Estante">Estante</label>
+                <input type="text" class="form-control" id="Estante" placeholder="Estante"  required>
+              </div>
+            </div>
+            <!-- termina la segunda fila -->
+            <div class="form-row">              
+              <div class="col-md-4 mb-2">
+                <label for="Fecha">Fecha</label>
+                <input type="datatime" class="form-control" id="Fecha" required>                
+              </div>
+              <div class="form-group">
+                <label for="foto">Selecciona una imagen</label>                
+                <input type="file" class=" ml-2 form-control-file" id="foto">
+              </div>
+            </div> 
+            <div class="form-row">
+              <div class="col-md-12">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+              </div>
+            </div>  
+          </form>
+        </div>
+      </div>
+    </div>
+<!--fin>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

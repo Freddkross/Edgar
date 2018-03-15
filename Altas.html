@@ -16,7 +16,7 @@
     <!--cabecera de la pagina -->
 
     <section class="title ">
-        <h1>Menú</h1>
+        <h1>Altas</h1>
     </section>
 <!-- fin cabecera de la pagina -->
 
@@ -25,7 +25,7 @@
         <ul class="menu">
 
             <li class="first-item">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/home.jpg" alt="" class="imagen">
                     <span class="text-item">Inicio</span>
                     <span class="down-item"></span>
@@ -41,7 +41,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="Altas.html">
                     <img src="img/al.jpg" alt="" class="imagen">
                     <span class="text-item">Altas</span>
                     <span class="down-item"></span>
@@ -49,7 +49,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="Bajas.html">
                     <img src="img/ba.jpg" alt="" class="imagen">
                     <span class="text-item">Bajas</span>
                     <span class="down-item"></span>
@@ -63,95 +63,66 @@
     <!--fin del menu -->
 
     <!--Inicio de registro altas -->
-    <br><br>
-    <div class="container">
-      <div class="row">
+    
+    <div class="mt-5 container d-flex justify-content-center  ">
+      <div class="row ">
         <div class="col ">
-          <form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-1 mb-6">
-      <label for="validationTooltip01">ID</label>
-      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-2">
-      <label for="validationTooltip02">Genero</label>
-      <input type="text" class="form-control" id="validationTooltip02" placeholder="" value="Example-pop-" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationTooltipUsername">Autor</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
-        </div>
-        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Name autor" aria-describedby="validationTooltipUsernamePrepend" required>
-        <div class="invalid-tooltip">
-          Please choose a unique and valid username.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-1 mb-6">
-      <label for="validationTooltip01">Album</label>
-      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-2">
-      <label for="validationTooltip02">Pasillo</label>
-      <input type="text" class="form-control" id="validationTooltip02" placeholder="" value="Example-pop-" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationTooltipUsername">Area</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
-        </div>
-        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Name autor" aria-describedby="validationTooltipUsernamePrepend" required>
-        <div class="invalid-tooltip">
-          Please choose a unique and valid username.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-1 mb-6">
-      <label for="validationTooltip01">Estante</label>
-      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-2">
-      <label for="validationTooltip02">Fecha</label>
-      <input type="text" class="form-control" id="validationTooltip02" placeholder="" value="Example-pop-" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <form>
-  <div class="form-group">
-    <label for="exampleFormControlFile1">Selecciona una imagen</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-    <br>
-    <button class="btn btn-primary" type="submit">Guardar</button>
-  </div>
-</form>
-        </div>
-      </div>
-    </div>
-  </div>
-</form>
+          <!--inicio del formulario -->
+          <form>
+             <div class="form-row">
+              <!--fila del Id -->
+               <div class="col-md-3 mb-4">
+                <label  for="ID">ID</label>
+                <input type="text" class="form-control" id="ID" placeholder="ID del album"  required>
+              </div>
+             </div>
+            <!--primera fila -->
+            <div class="form-row">
+               <div class="col-md-4 mb-6">
+                <label for="Album">Album</label>
+                <input type="text" class="form-control" id="Album" placeholder="Nombre del album"  required>                
+              </div>              
+              <div class="col-md-4 mb-2">
+                <label for="Genero">Genero</label>
+                <input type="text" class="form-control" id="Genero" placeholder="Genero"  required>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label for="Autor">Autor</label>               
+                  <input type="text" class="form-control" id="Autor" placeholder="Nombre del Autor"  required>                  
+              </div>
+            </div>
+        <!-- termina la primera fila -->
+            <div class="form-row">             
+              <div class="col-md-4 mb-2">
+                <label for="Pasillo">Pasillo</label>
+                <input type="text" class="form-control" id="Pasillo" placeholder="Pasillo A">
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="Are">Area</label>
+                  <input type="text" class="form-control" id="Area" placeholder="Area de hubicación"  required>
+              </div>
+              <div class="col-md-4 mb-6">
+                <label for="Estante">Estante</label>
+                <input type="text" class="form-control" id="Estante" placeholder="Estante"  required>
+              </div>
+            </div>
+            <!-- termina la segunda fila -->
+            <div class="form-row">              
+              <div class="col-md-4 mb-2">
+                <label for="Fecha">Fecha</label>
+                <input type="datatime" class="form-control" id="Fecha" required>                
+              </div>
+              <div class="form-group">
+                <label for="foto">Selecciona una imagen</label>                
+                <input type="file" class=" ml-2 form-control-file" id="foto">
+              </div>
+            </div> 
+            <div class="form-row">
+              <div class="col-md-12">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+              </div>
+            </div>  
+          </form>
         </div>
       </div>
     </div>
