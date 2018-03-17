@@ -13,8 +13,15 @@ $FechaIng=$_POST['Fecha'];
 
 
 
-mysqli_query($conexion,"INSERT INTO discos VALUES('$Id', '$Album', '$Genero', '$Autor', '$Pasillo', '$Area', '$Estante', 
-	'$FechaIng'");
+$sql=mysqli_query($conexion,"INSERT INTO discos (Id,Album,Autor,Genero,Pasillo,Area,Estante) VALUES (Null, '$Album', '$Genero', '$Autor', '$Pasillo', '$Area', '$Estante')");
+
+
 mysqli_close($conexion);
-//header('Location:../Altas.html');
+
+if($sql){
+	echo "Datos registrados corretamente";
+}else{
+	echo "Los datos no se pudieron guardar";
+}
+
 ?>
