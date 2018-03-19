@@ -1,9 +1,16 @@
 <?php
 // Se establecen las variables con los datos de acceso
-$servidor = "mysql.hostinger.mx";
-$usuario = "u449168803_fredd";
-$contra = "Holaduck";
-$basedatos = "u449168803_phpf";
+//$servidor = "mysql.hostinger.mx";
+//$usuario = "u449168803_fredd";
+//$contra = "Holaduck";
+//$basedatos = "u449168803_phpf";
+
+
+$servidor = "localhost";
+$usuario = "root";
+$contra = "";
+$basedatos = "radio";
+
 
 // se establece la conexion con la base de datos.
 $conexion = mysqli_connect($servidor,$usuario,$contra,$basedatos);

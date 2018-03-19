@@ -13,7 +13,7 @@ $FechaIng=$_POST['Fecha'];
 
 
 
-$sql=mysqli_query($conexion,"INSERT INTO discos (Id,Album,Autor,Genero,Pasillo,Area,Estante) VALUES (Null, '$Album', '$Genero', '$Autor', '$Pasillo', '$Area', '$Estante')");
+$sql=mysqli_query($conexion,"INSERT INTO discos (Id,Album,Autor,Genero,Pasillo,Area,Estante) VALUES (Null, '$Album', '$Autor','$Genero',  '$Pasillo', '$Area', '$Estante')");
 
 
 mysqli_close($conexion);
