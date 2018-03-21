@@ -6,241 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
 
     <link rel="stylesheet" href="css/Style.css">
-    <title>Busquedas!</title>
+    <title>Consultas</title>
   </head>
   <body>
+<!--cabecera de la pagina -->
 
-                 <!--inicio del  menu -->
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <h4 class="text-white">Menu</h4>
-                <span class="text-muted">Encuentra siemprelo que buscas.</span> <hr>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link disabled" href="#">Login </a> <hr>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:#FFF" href="#">Busquedas</a><hr>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Registros</a><hr>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-    </div>
-    <!-- fin del  menu desplegable -->
+    <section class="title ">
+        <h1>Consultas</h1>
+    </section>
+<!-- fin cabecera de la pagina -->
 
+<!--inicio del menu -->
+<nav class="navegacion">
+        <ul class="menu">
 
+            <li class="first-item">
+                <a href="menu.html">
+                    <img src="img/home.jpg" alt="" class="imagen">
+                    <span class="text-item">Inicio</span>
+                    <span class="down-item"></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="Busqueda.html">
+                    <img src="img/co.jpg" alt="" class="imagen">
+                    <span class="text-item">Consultas</span>
+                    <span class="down-item"></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="Altas.html">
+                    <img src="img/al.jpg" alt="" class="imagen">
+                    <span class="text-item">Altas</span>
+                    <span class="down-item"></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="Bajas.html">
+                    <img src="img/ba.jpg" alt="" class="imagen">
+                    <span class="text-item">Bajas</span>
+                    <span class="down-item"></span>
+                </a>
+            </li>
+
+            
+
+        </ul>
+</nav>
+<!--fin del menu -->
     
-    <div class="container">
+    <div class="container  mt-5 pt-4">
         <div class="row">
-                <div class=" col-sm-4 fluid">
-                        <h2 class="display-4">Busquedas</h2>
-                        
-                                       <!-- caracteristicas del album -->
-                        <figure class="figure mt-4 pt-3  ">
-                            <img src="img/album.jpg"  class="figure-img img-fluid rounded" alt="caratula del album.">
-                            <figcaption class="figure-caption text-left">Caratula del album.</figcaption>
-                        </figure>   
-                        <div class="row col-12 ">
-                            <form class="form-row">   
-                                    <button type="submit" class="btn btn-info  col-md-3 ">Buscar</button>                        
-                                 <div class="col-md-8 ml-4 ">
-                                     <input class=" row form-control" placeholder="Buscar..." type="search" name="buscar" id="buscar">
-                                 </div>
-                                 
-                                 
-                                <fieldset class=" form-group pt-4">
-                                    <div class="row col-md-12">
-                                        <legend class="col-form-label pl-0 ml-0 col-md-4 pt-4">Busquedas</legend>
-                                    <div class="col-sm-8 pl-5 ">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="ID" checked>
-                                        <label class="form-check-label" for="gridRadios1">
-                                           ID
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="AUTOR">
-                                        <label class="form-check-label" for="gridRadios2">
-                                           Autor
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="ALBUM" >
-                                        <label class="form-check-label" for="gridRadios3">
-                                          Album
-                                        </label>
-                                     </div>
-                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="GENERO" >
-                                        <label class="form-check-label" for="gridRadios3">
-                                             Genero
-                                        </label>
-                                         </div>
-                                    </div>
-                                  </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                   
-                        
-                    </div>
-            <!--inicio de la tabla -->
-            <div class="col-sm-12 col-md-8">
-                <h1 class="display-4 text-center ">Registros Encontrados</h1>
-                <table class="table table-striped table-dark mt-5 ml-1">
-                     <thead>
-                        <tr>
-                          <th scope="col">ID</th>
-                          <th scope="col">Genero</th>
-                          <th scope="col">Autor</th>
-                          <th scope="col">Album</th>
-                          <th scope="col">Pasillo</th>
-                          <th scope="col">Area </th>
-                          <th scope="col">Estante  </th>
-                          <th scope="col">Detalles </th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                       
-                        <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Rock</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <!--boton modal-->                           
-                        <td>
-                        <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#mod1">
-                                <i>Detalles</i> 
-                            </button>
-                                     
-                        <!-- Modal -->
-                        <div class="modal fade" id="mod1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel" style="color:gray">Detalles del Album</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                                    <div class="modal-body">
-                                        <div class="row">    
-                                            <div class="col-md-4">
-                                                <img src="img/album.jpg" class="img-fluid" alt="">
-                                            </div>                                        
-                                            <div class="col-md-8 des" >                                                
-                                                    ID:
-                                                    <br>
-                                                    Genero:
-                                                    <br>
-                                                    Autor:                                           
-                                                    <br>
-                                                    Album:
-                                                    <br>
-                                                    Fecha reg:
-                                                    <br>
-                                                    Pasillo:
-                                                    <br>
-                                                    Area:
-                                                    <br>
-                                                    Estante:
-                                            </div>
-                                            
-                                        </div>
-                                </div>
-                            <div class="modal-footer">                                        
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </td>
-            </tr>   
-                        <tr>
-                                <th scope="row">2</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Rock</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <!--boton modal-->                           
-                                <td>
-                                <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#mod2">
-                                        <i>Detalles</i> 
-                                    </button>
-                                            
-                                <!-- Modal -->
-                                <div class="modal fade" id="mod2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel" style="color:gray">Detalles del Album</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                            <div class="col-md-4">
-                                                <img src="img/album.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="col-md-8 des" >
-                                                    ID:
-                                                    <br>
-                                                    Genero:
-                                                    <br>
-                                                    Autor:                                           
-                                                    <br>
-                                                    Album:
-                                                    <br>
-                                                    Fecha reg:
-                                                    <br>
-                                                    Pasillo:
-                                                    <br>
-                                                    Area:
-                                                    <br>
-                                                    Estante:
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">                                        
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>                                                                                 
-                                       
-                     </tbody>
-                </table>
+            <div class=" ml-5 col-ms-4 d-flex justify-content-center ">
+                 <!-- caracteristicas del album -->
+                <figure class="figure mt-3 ">
+                    <img src="img/album.jpg"  height="150px" width="150px" class="figure-img img-fluid rounded" alt="caratula del album.">
+                </figure>
+            </div>     
+            <div class="col-md-8 mt-3 "> 
+                    <div class="col-md-8 ml-3">
+                        <input class=" row form-control" placeholder="Buscar..." type="search" name="caja_busqueda" id="caja_busqueda">
+                    </div> 
             </div>
-           
         </div>
+
+
+        <!-- inicio de la tabla -->
+        <div class="row" id="datos">
+            
+        </div>
+         <!-- fin de la tabla -->      
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="php/main.js"></script>
+   
   </body>
 </html>
