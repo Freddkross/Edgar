@@ -6,7 +6,7 @@ $query = "SELECT * FROM discos";
 
 if(isset($_POST['consulta'])){
 	$q = $mysqli->real_escape_string($_POST['consulta']);
-	$query= "SELECT ID, Album, Genero, Autor, Pasillo, Area, Estante,Fecha FROM discos WHERE Album LIKE '%".$q."%' OR Genero LIKE '%".$q."%' OR Autor LIKE '%".$q."%'";
+	$query= "SELECT ID, Album, Genero, Autor, Pasillo, Area, Estante, Fecha FROM discos WHERE Album LIKE '%".$q."%' OR Genero LIKE '%".$q."%' OR Autor LIKE '%".$q."%'";
 
 }
 

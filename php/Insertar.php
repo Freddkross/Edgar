@@ -14,14 +14,14 @@ $FechaIng=$_POST['Fecha'];
 
 
 $sql=mysqli_query($conexion,"INSERT INTO discos
- (ID, Album,  Genero, Autor, Pasillo, Area, Estante, Fecha) VALUES 
- ('$Id', '$Album', '$Genero', '$Autor', '$Pasillo', '$Area', '$Estante', '$FechaIng')");
+ (ID, Album,  Autor, Genero, Pasillo, Area, Estante, Fecha) VALUES 
+ (Null, '$Album', '$Genero', '$Autor', '$Pasillo', '$Area', '$Estante', '$FechaIng')");
 
 
 mysqli_close($conexion);
 
 if($sql){
-	echo "Datos registrados corretamente";
+	header("Location:../Busqueda.html");
 }else{
 	echo "Los datos no se pudieron guardar";
 }
